@@ -68,7 +68,7 @@ alter_profile(){
 	elif [ -e $HOME/.zshrc ]; then
 		echo "$PTOOLSVAR" >> $HOME/.zshrc
 		echo "$PATHVAR" >> $HOME/.zshrc
-		SOURCE_FILE=$HOME/.bashrc
+		SOURCE_FILE=$HOME/.zshrc
 
 		source ${SOURCE_FILE}
 	elif [ -e $HOME/.cshrc ]; then
